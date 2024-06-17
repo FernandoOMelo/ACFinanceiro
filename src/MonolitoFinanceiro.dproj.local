@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/02/23 17:50:58.000.764,=C:\Users\Fernando Melo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/03/18 12:16:14.000.182,=C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/17 15:42:30.930,=C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/17 15:43:46.195,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vPrincipal.pas=C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/17 15:43:46.195,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vPrincipal.dfm=C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/06/17 15:44:08.228,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\MonolitoFinanceiro.dproj=C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
