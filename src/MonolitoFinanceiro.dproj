@@ -84,6 +84,10 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppEnableHighDPI>true</AppEnableHighDPI>
+        <DCC_DcuOutput>C:\Fontes\DCU\ACFinanceiro\</DCC_DcuOutput>
+        <DCC_ExeOutput>C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Bin\</DCC_ExeOutput>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -100,7 +104,15 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="view\vPrincipal.pas">
-            <Form>Form1</Form>
+            <Form>frmPrincipal</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="view\vCadastroPadrao.pas">
+            <Form>frmCadastroPadrao</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="view\vSplash.pas">
+            <Form>frmSplash</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
@@ -123,9 +135,13 @@
                 <Source>
                     <Source Name="MainSource">MonolitoFinanceiro.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k250.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp250.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="Win32\Debug\MonolitoFinanceiro.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="Bin\MonolitoFinanceiro.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>MonolitoFinanceiro.exe</RemoteName>
                         <Overwrite>true</Overwrite>

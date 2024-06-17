@@ -4,8 +4,16 @@
     <Transaction>2024/02/23 17:50:58.000.764,=C:\Users\Fernando Melo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2024/03/18 12:16:14.000.182,=C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2024/06/17 15:42:30.930,=C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024/06/17 15:43:46.195,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vPrincipal.pas=C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2024/06/17 15:43:46.195,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vPrincipal.dfm=C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/06/17 15:43:46.195,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vPrincipal.pas=C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2024/06/17 15:44:08.228,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\MonolitoFinanceiro.dproj=C:\Users\Fernando Melo\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/06/17 15:52:06.965,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
+    <Transaction>2024/06/17 15:52:46.681,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroTemplate.dfm=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.dfm</Transaction>
+    <Transaction>2024/06/17 15:52:46.681,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroTemplate.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
+    <Transaction>2024/06/17 15:53:25.890,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroPadrao.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroTemplate.pas</Transaction>
+    <Transaction>2024/06/17 15:53:25.890,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroPadrao.dfm=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroTemplate.dfm</Transaction>
+    <Transaction>2024/06/17 16:38:30.191,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
+    <Transaction>2024/06/17 16:38:38.995,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vSplash.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
+    <Transaction>2024/06/17 16:38:38.995,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vSplash.dfm=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>
