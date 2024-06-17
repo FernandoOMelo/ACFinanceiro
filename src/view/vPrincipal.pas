@@ -12,8 +12,8 @@ type
     menuCadastro: TMenuItem;
     menuRelatorios: TMenuItem;
     menuAjuda: TMenuItem;
-    menuCadastroPadrao: TMenuItem;
-    procedure menuCadastroPadraoClick(Sender: TObject);
+    menuUsuarios: TMenuItem;
+    procedure menuUsuariosClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -28,7 +28,7 @@ implementation
 
 uses
   vCadastroPadrao,
-  vSplash;
+  vSplash, vCadastroUsuarios;
 
 {$R *.dfm}
 
@@ -42,9 +42,9 @@ begin
   end;
 end;
 
-procedure TfrmPrincipal.menuCadastroPadraoClick(Sender: TObject);
+procedure TfrmPrincipal.menuUsuariosClick(Sender: TObject);
 begin
-  frmCadastroPadrao.Show;
+  frmUsuarios.Show;
 end;
 
 end.
