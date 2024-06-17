@@ -10,17 +10,21 @@ object frmPrincipal: TfrmPrincipal
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  Menu = MainMenu1
+  Menu = menuPrincipal
   OldCreateOrder = False
   Position = poScreenCenter
   WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 13
-  object MainMenu1: TMainMenu
+  object menuPrincipal: TMainMenu
     Left = 856
     Top = 8
     object menuCadastro: TMenuItem
       Caption = 'Cadastros'
+      object menuCadastroPadrao: TMenuItem
+        Caption = 'Cadastro Padr'#227'o'
+        OnClick = menuCadastroPadraoClick
+      end
     end
     object menuRelatorios: TMenuItem
       Caption = 'Relat'#243'rios'

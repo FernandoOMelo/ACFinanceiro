@@ -8,10 +8,12 @@ uses
 
 type
   TfrmPrincipal = class(TForm)
-    MainMenu1: TMainMenu;
+    menuPrincipal: TMainMenu;
     menuCadastro: TMenuItem;
     menuRelatorios: TMenuItem;
     menuAjuda: TMenuItem;
+    menuCadastroPadrao: TMenuItem;
+    procedure menuCadastroPadraoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,6 +25,14 @@ var
 
 implementation
 
+uses
+  vCadastroPadrao;
+
 {$R *.dfm}
+
+procedure TfrmPrincipal.menuCadastroPadraoClick(Sender: TObject);
+begin
+  frmCadastroPadrao.Show;
+end;
 
 end.
