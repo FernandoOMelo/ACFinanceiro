@@ -1,22 +1,197 @@
 inherited frmUsuarios: TfrmUsuarios
   Caption = 'Cadastro Usu'#225'rios'
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 19
   inherited pnPrincipal: TCardPanel
+    ActiveCard = cardPesquisa
+    inherited cardCadastro: TCard
+      Padding.Left = 50
+      Padding.Top = 10
+      Padding.Right = 50
+      Padding.Bottom = 10
+      object Label1: TLabel [0]
+        AlignWithMargins = True
+        Left = 50
+        Top = 10
+        Width = 886
+        Height = 19
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 0
+        Margins.Bottom = 10
+        Align = alTop
+        Caption = 'Nome: '
+        ExplicitLeft = 13
+        ExplicitTop = 44
+        ExplicitWidth = 53
+      end
+      object Label2: TLabel [1]
+        AlignWithMargins = True
+        Left = 50
+        Top = 76
+        Width = 886
+        Height = 19
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 0
+        Margins.Bottom = 10
+        Align = alTop
+        Caption = 'Login: '
+        ExplicitLeft = 19
+        ExplicitTop = 69
+        ExplicitWidth = 50
+      end
+      object Label3: TLabel [2]
+        AlignWithMargins = True
+        Left = 50
+        Top = 142
+        Width = 886
+        Height = 19
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 0
+        Margins.Bottom = 10
+        Align = alTop
+        Caption = 'Senha: '
+        ExplicitLeft = 15
+        ExplicitTop = 102
+        ExplicitWidth = 54
+      end
+      object Label4: TLabel [3]
+        AlignWithMargins = True
+        Left = 50
+        Top = 208
+        Width = 886
+        Height = 19
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 0
+        Margins.Bottom = 10
+        Align = alTop
+        Caption = 'Ativo:'
+        ExplicitLeft = 21
+        ExplicitTop = 135
+        ExplicitWidth = 43
+      end
+      inherited Panel1: TPanel
+        Left = 50
+        Top = 632
+        Width = 886
+        inherited Button1: TButton
+          Left = 742
+        end
+        inherited btnSalvar: TButton
+          Left = 598
+          OnClick = btnSalvarClick
+        end
+      end
+      object edtNome: TEdit
+        AlignWithMargins = True
+        Left = 50
+        Top = 39
+        Width = 886
+        Height = 27
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 0
+        Margins.Bottom = 10
+        Align = alTop
+        TabOrder = 1
+        ExplicitLeft = 72
+        ExplicitTop = 36
+        ExplicitWidth = 617
+      end
+      object edtLogin: TEdit
+        AlignWithMargins = True
+        Left = 50
+        Top = 105
+        Width = 886
+        Height = 27
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 0
+        Margins.Bottom = 10
+        Align = alTop
+        TabOrder = 2
+        ExplicitLeft = 72
+        ExplicitTop = 69
+        ExplicitWidth = 617
+      end
+      object edtSenha: TEdit
+        AlignWithMargins = True
+        Left = 50
+        Top = 171
+        Width = 886
+        Height = 27
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 0
+        Margins.Bottom = 10
+        Align = alTop
+        TabOrder = 3
+        ExplicitLeft = 72
+        ExplicitTop = 102
+        ExplicitWidth = 617
+      end
+      object btnStatus: TToggleSwitch
+        AlignWithMargins = True
+        Left = 50
+        Top = 237
+        Width = 886
+        Height = 21
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 0
+        Margins.Bottom = 10
+        Align = alTop
+        State = tssOn
+        StateCaptions.CaptionOn = 'Ativo'
+        StateCaptions.CaptionOff = 'Desativado'
+        TabOrder = 4
+        ExplicitWidth = 133
+      end
+    end
     inherited cardPesquisa: TCard
       inherited pnPesquisa: TPanel
         inherited btnPesquisar: TButton
           OnClick = btnPesquisarClick
         end
       end
+      inherited pnBotoes: TPanel
+        inherited btnExcluir: TButton
+          OnClick = btnExcluirClick
+        end
+      end
       inherited pnGrid: TPanel
         inherited DBGrid1: TDBGrid
           DataSource = DataSource1
+          Columns = <
+            item
+              Expanded = False
+              FieldName = 'NOME'
+              Width = 375
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'LOGIN'
+              Width = 414
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'STATUS'
+              Width = 177
+              Visible = True
+            end>
         end
       end
     end
   end
   inherited ImageList1: TImageList
+    Left = 928
+    Top = 569
     Bitmap = {
       494C010108001400300020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       00000000000036000000280000008000000060000000010020000000000000C0
@@ -1610,7 +1785,7 @@ inherited frmUsuarios: TfrmUsuarios
       000000000000}
   end
   object DataSource1: TDataSource
-    DataSet = dmConexao.FDQuery1
+    DataSet = dmUsuarios.cdsUsuarios
     Left = 880
     Top = 569
   end

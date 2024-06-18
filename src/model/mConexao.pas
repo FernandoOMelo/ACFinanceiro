@@ -11,7 +11,6 @@ uses
 type
   TdmConexao = class(TDataModule)
     SQLConexao: TFDConnection;
-    FDQuery1: TFDQuery;
     procedure DataModuleCreate(Sender: TObject);
     Const ARQUIVO_CONFIGURACAO = 'config.cfg';
   private
@@ -28,7 +27,7 @@ var
 implementation
 
 uses
-  System.SysUtils;
+  System.SysUtils, Vcl.StdCtrls, Vcl.WinXCtrls;
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
