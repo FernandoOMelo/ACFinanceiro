@@ -26,10 +26,6 @@ object frmSplash: TfrmSplash
     Padding.Top = 10
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 136
-    ExplicitTop = 112
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object imgLogo: TImage
       Left = 0
       Top = 10
@@ -445,8 +441,6 @@ object frmSplash: TfrmSplash
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
-      ExplicitLeft = 0
-      ExplicitTop = 284
       ExplicitWidth = 4
     end
     object imgDll: TImage
@@ -637,13 +631,10 @@ object frmSplash: TfrmSplash
       Align = alBottom
       Step = 1
       TabOrder = 0
-      ExplicitLeft = 224
-      ExplicitTop = 328
-      ExplicitWidth = 150
     end
   end
   object Timer1: TTimer
-    Interval = 50
+    Interval = 10
     OnTimer = Timer1Timer
     Left = 496
     Top = 240

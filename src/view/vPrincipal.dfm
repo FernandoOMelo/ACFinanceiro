@@ -17,6 +17,19 @@ object frmPrincipal: TfrmPrincipal
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 19
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 640
+    Width = 898
+    Height = 31
+    Panels = <
+      item
+        Width = 200
+      end
+      item
+        Width = 300
+      end>
+  end
   object menuPrincipal: TMainMenu
     Left = 856
     Top = 8
@@ -33,5 +46,10 @@ object frmPrincipal: TfrmPrincipal
     object menuAjuda: TMenuItem
       Caption = 'Ajuda'
     end
+  end
+  object tmrRelogio: TTimer
+    OnTimer = tmrRelogioTimer
+    Left = 856
+    Top = 296
   end
 end

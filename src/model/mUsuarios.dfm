@@ -1,5 +1,7 @@
 object dmUsuarios: TdmUsuarios
   OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
   Height = 503
   Width = 649
   object sqlUsuarios: TFDQuery
