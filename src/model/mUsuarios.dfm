@@ -34,6 +34,7 @@ object dmUsuarios: TdmUsuarios
     end
     object cdsUsuariosSENHA: TStringField
       FieldName = 'SENHA'
+      Size = 60
     end
     object cdsUsuariosSTATUS: TStringField
       FieldName = 'STATUS'
@@ -41,6 +42,10 @@ object dmUsuarios: TdmUsuarios
     end
     object cdsUsuariosDATA_CADASTRO: TDateField
       FieldName = 'DATA_CADASTRO'
+    end
+    object cdsUsuariosSENHA_TEMP: TStringField
+      FieldName = 'SENHA_TEMP'
+      Size = 1
     end
   end
 end

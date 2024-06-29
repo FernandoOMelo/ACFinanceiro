@@ -764,10 +764,6 @@ object frmLogin: TfrmLogin
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = 368
-    ExplicitTop = 112
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object pnLogin: TPanel
       Left = 0
       Top = 94
@@ -778,12 +774,9 @@ object frmLogin: TfrmLogin
       Padding.Left = 60
       Padding.Right = 60
       TabOrder = 0
-      ExplicitTop = 100
-      ExplicitWidth = 400
-      ExplicitHeight = 258
       object lbSenha: TLabel
         Left = 60
-        Top = 69
+        Top = 63
         Width = 313
         Height = 19
         Align = alTop
@@ -794,8 +787,7 @@ object frmLogin: TfrmLogin
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        ExplicitLeft = 0
-        ExplicitTop = 40
+        ExplicitTop = 69
         ExplicitWidth = 43
       end
       object lbLogin: TLabel
@@ -811,37 +803,32 @@ object frmLogin: TfrmLogin
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        ExplicitLeft = 0
         ExplicitWidth = 54
       end
       object edtSenha: TEdit
         AlignWithMargins = True
         Left = 63
-        Top = 91
+        Top = 85
         Width = 307
-        Height = 28
+        Height = 21
         Margins.Bottom = 20
         Align = alTop
+        PasswordChar = '*'
         TabOrder = 1
-        ExplicitLeft = 3
-        ExplicitTop = 85
-        ExplicitWidth = 427
       end
       object edtLogin: TEdit
         AlignWithMargins = True
         Left = 63
         Top = 22
         Width = 307
-        Height = 27
+        Height = 21
         Margins.Bottom = 20
         Align = alTop
         TabOrder = 0
-        ExplicitLeft = 3
-        ExplicitWidth = 427
       end
       object btnEntrar: TButton
         Left = 60
-        Top = 139
+        Top = 126
         Width = 313
         Height = 46
         Align = alTop
@@ -871,12 +858,11 @@ object frmLogin: TfrmLogin
       Padding.Left = 12
       ParentFont = False
       TabOrder = 1
-      ExplicitWidth = 400
       object lbNomeAplicacao: TLabel
         Left = 12
         Top = 0
         Width = 421
-        Height = 57
+        Height = 29
         Align = alTop
         Caption = 'Bem vindo ao Sistema Financeiro'
         Font.Charset = DEFAULT_CHARSET
@@ -886,12 +872,11 @@ object frmLogin: TfrmLogin
         Font.Style = []
         ParentFont = False
         Layout = tlCenter
-        ExplicitLeft = 0
-        ExplicitWidth = 400
+        ExplicitWidth = 352
       end
       object lbDetalhes: TLabel
         Left = 12
-        Top = 57
+        Top = 29
         Width = 421
         Height = 19
         Align = alTop
@@ -903,7 +888,7 @@ object frmLogin: TfrmLogin
         Font.Style = []
         ParentFont = False
         Layout = tlCenter
-        ExplicitTop = 75
+        ExplicitTop = 57
         ExplicitWidth = 390
       end
     end

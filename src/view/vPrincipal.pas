@@ -34,7 +34,7 @@ uses
   vSplash,
   vCadastroUsuarios,
   vLogin,
-  mUsuarios;
+  mUsuarios, vRedefinirSenha;
 
 {$R *.dfm}
 
@@ -55,6 +55,20 @@ begin
   finally
     FreeAndNil(frmLogin);
   end;
+
+  if dmUsuarios.GetUsuarioLogado.SenhaTemp then
+  begin
+    frmRedefinirSenha := TFrmRedefinirSenha.Create(nil);
+    try
+      frmRedefinirSenha.Usuario := dmUsuarios.GetUsuarioLogado;
+      frmRedefinirSenha.ShowModal;
+      if frmRedefinirSenha.ModalResult <> mrOk then
+        Application.Terminate;
+    finally
+      FreeAndNil(frmRedefinirSenha);
+    end;
+  end;
+
 
   StatusBar1.Panels.Items[1].Text := 'Usuário: ' + dmUsuarios.GetUsuarioLogado.Nome;
 

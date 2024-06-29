@@ -4,12 +4,14 @@ inherited frmUsuarios: TfrmUsuarios
   PixelsPerInch = 96
   TextHeight = 19
   inherited pnPrincipal: TCardPanel
-    ActiveCard = cardPesquisa
+    ActiveCard = cardCadastro
     inherited cardCadastro: TCard
       Padding.Left = 50
       Padding.Top = 10
       Padding.Right = 50
       Padding.Bottom = 10
+      ExplicitWidth = 986
+      ExplicitHeight = 726
       object Label1: TLabel [0]
         AlignWithMargins = True
         Left = 50
@@ -22,8 +24,6 @@ inherited frmUsuarios: TfrmUsuarios
         Margins.Bottom = 10
         Align = alTop
         Caption = 'Nome: '
-        ExplicitLeft = 13
-        ExplicitTop = 44
         ExplicitWidth = 53
       end
       object Label2: TLabel [1]
@@ -38,11 +38,9 @@ inherited frmUsuarios: TfrmUsuarios
         Margins.Bottom = 10
         Align = alTop
         Caption = 'Login: '
-        ExplicitLeft = 19
-        ExplicitTop = 69
         ExplicitWidth = 50
       end
-      object Label3: TLabel [2]
+      object Label4: TLabel [2]
         AlignWithMargins = True
         Left = 50
         Top = 142
@@ -53,37 +51,24 @@ inherited frmUsuarios: TfrmUsuarios
         Margins.Right = 0
         Margins.Bottom = 10
         Align = alTop
-        Caption = 'Senha: '
-        ExplicitLeft = 15
-        ExplicitTop = 102
-        ExplicitWidth = 54
-      end
-      object Label4: TLabel [3]
-        AlignWithMargins = True
-        Left = 50
-        Top = 208
-        Width = 886
-        Height = 19
-        Margins.Left = 0
-        Margins.Top = 0
-        Margins.Right = 0
-        Margins.Bottom = 10
-        Align = alTop
         Caption = 'Ativo:'
-        ExplicitLeft = 21
-        ExplicitTop = 135
+        ExplicitTop = 208
         ExplicitWidth = 43
       end
       inherited Panel1: TPanel
         Left = 50
         Top = 632
         Width = 886
+        ExplicitLeft = 50
+        ExplicitWidth = 886
         inherited Button1: TButton
           Left = 742
+          ExplicitLeft = 742
         end
         inherited btnSalvar: TButton
           Left = 598
           OnClick = btnSalvarClick
+          ExplicitLeft = 598
         end
       end
       object edtNome: TEdit
@@ -98,9 +83,6 @@ inherited frmUsuarios: TfrmUsuarios
         Margins.Bottom = 10
         Align = alTop
         TabOrder = 1
-        ExplicitLeft = 72
-        ExplicitTop = 36
-        ExplicitWidth = 617
       end
       object edtLogin: TEdit
         AlignWithMargins = True
@@ -114,30 +96,11 @@ inherited frmUsuarios: TfrmUsuarios
         Margins.Bottom = 10
         Align = alTop
         TabOrder = 2
-        ExplicitLeft = 72
-        ExplicitTop = 69
-        ExplicitWidth = 617
-      end
-      object edtSenha: TEdit
-        AlignWithMargins = True
-        Left = 50
-        Top = 171
-        Width = 886
-        Height = 27
-        Margins.Left = 0
-        Margins.Top = 0
-        Margins.Right = 0
-        Margins.Bottom = 10
-        Align = alTop
-        TabOrder = 3
-        ExplicitLeft = 72
-        ExplicitTop = 102
-        ExplicitWidth = 617
       end
       object btnStatus: TToggleSwitch
         AlignWithMargins = True
         Left = 50
-        Top = 237
+        Top = 171
         Width = 886
         Height = 21
         Margins.Left = 0
@@ -148,7 +111,8 @@ inherited frmUsuarios: TfrmUsuarios
         State = tssOn
         StateCaptions.CaptionOn = 'Ativo'
         StateCaptions.CaptionOff = 'Desativado'
-        TabOrder = 4
+        TabOrder = 3
+        ExplicitTop = 237
         ExplicitWidth = 133
       end
     end
@@ -166,6 +130,7 @@ inherited frmUsuarios: TfrmUsuarios
       inherited pnGrid: TPanel
         inherited DBGrid1: TDBGrid
           DataSource = DataSource1
+          PopupMenu = PopupMenu1
           Columns = <
             item
               Expanded = False
@@ -193,7 +158,7 @@ inherited frmUsuarios: TfrmUsuarios
     Left = 928
     Top = 569
     Bitmap = {
-      494C010108001400300020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010108001400380020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       00000000000036000000280000008000000060000000010020000000000000C0
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -1788,5 +1753,13 @@ inherited frmUsuarios: TfrmUsuarios
     DataSet = dmUsuarios.cdsUsuarios
     Left = 880
     Top = 569
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 824
+    Top = 304
+    object menuLimparSenha: TMenuItem
+      Caption = 'Limpar Senha'
+      OnClick = menuLimparSenhaClick
+    end
   end
 end

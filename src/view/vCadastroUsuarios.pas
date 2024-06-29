@@ -6,19 +6,19 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, vCadastroPadrao, Data.DB, System.ImageList, Vcl.ImgList, Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls,
   Vcl.ExtCtrls, Vcl.WinXPanels,
-  mUsuarios, Vcl.WinXCtrls;
+  mUsuarios, Vcl.WinXCtrls, Vcl.Menus;
 
 type
   TfrmUsuarios = class(TfrmCadastroPadrao)
     DataSource1: TDataSource;
     edtNome: TEdit;
     edtLogin: TEdit;
-    edtSenha: TEdit;
     btnStatus: TToggleSwitch;
     Label1: TLabel;
     Label2: TLabel;
-    Label3: TLabel;
     Label4: TLabel;
+    PopupMenu1: TPopupMenu;
+    menuLimparSenha: TMenuItem;
     procedure btnPesquisarClick(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -26,6 +26,7 @@ type
     procedure btnIncluirClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure btnExcluirClick(Sender: TObject);
+    procedure menuLimparSenhaClick(Sender: TObject);
   private
     { Private declarations }
     procedure LimparCampos;
@@ -39,7 +40,8 @@ var
 implementation
 
 uses
-  cUtils;
+  cUtils,
+  BCrypt;
 
 {$R *.dfm}
 
@@ -50,7 +52,6 @@ begin
 
   edtNome.Text := dmUsuarios.cdsUsuariosNOME.AsString;
   edtLogin.Text := dmUsuarios.cdsUsuariosLOGIN.AsString;
-  edtSenha.Text := dmUsuarios.cdsUsuariosSENHA.AsString;
   btnStatus.State := tssOn;
   if dmUsuarios.cdsUsuariosSTATUS.AsString = 'D' then
     btnStatus.State := tssOff;
@@ -104,20 +105,11 @@ begin
     Application.MessageBox('O campo LOGIN não pode ser vazio.', 'Atenção', MB_OK + MB_ICONWARNING);
     Abort;
   end;
-    if edtSenha.Text = '' then
-  begin
-    edtNome.SetFocus;
-    Application.MessageBox('O campo SENHA não pode ser vazio.', 'Atenção', MB_OK + MB_ICONWARNING);
-    Abort;
-  end;
-
   if dmUsuarios.TemLoginCadastrado(Trim(edtLogin.Text), dmUsuarios.cdsUsuarios.FieldByName('ID').AsString) then
   begin
-    edtSenha.SetFocus;
     Application.MessageBox(PWideChar(Format('O login %s já se encontra cadastrado.', [edtLogin.Text])), 'Atenção', MB_OK + MB_ICONWARNING);
     Abort;
   end;
-
 
   lStatus := 'A';
 
@@ -133,11 +125,12 @@ begin
     Mensagem := 'Registro Incluido com Sucesso';
     dmUsuarios.cdsUsuariosID.AsString := TUtils.GetID;
     dmUsuarios.cdsUsuariosDATA_CADASTRO.AsDateTime := now;
+    dmUsuarios.cdsUsuariosSENHA.AsString := TBCrypt.GenerateHash(dmUsuarios.TEMP_PASSWORD.ToString);
+    dmUsuarios.cdsUsuariosSENHA_TEMP.AsString := 'S';
   end;
 
   dmUsuarios.cdsUsuariosNOME.AsString := Trim(edtNome.Text);
   dmUsuarios.cdsUsuariosLOGIN.AsString := Trim(edtLogin.Text);
-  dmUsuarios.cdsUsuariosSENHA.AsString := Trim(edtSenha.Text);
   dmUsuarios.cdsUsuariosSTATUS.AsString := Trim(lStatus);
 
   dmUsuarios.cdsUsuarios.Post;
@@ -178,6 +171,18 @@ begin
       TToggleSwitch(Components[Contador]).State := tssOn;
     end;
   end;
+end;
+
+procedure TfrmUsuarios.menuLimparSenhaClick(Sender: TObject);
+begin
+  inherited;
+  if not DataSource1.DataSet.IsEmpty then
+  begin
+    dmUsuarios.LimparSenha(DataSource1.DataSet.FieldByName('ID').AsString);
+    Application.MessageBox(PWideChar(Format('Foi definida a senha padrão para o usuário "%s"',
+      [DataSource1.DataSet.FieldByName('NOME').AsString])), 'Atenção', MB_OK + MB_ICONINFORMATION);
+  end;
+
 end;
 
 end.

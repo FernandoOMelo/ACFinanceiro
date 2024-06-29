@@ -11,7 +11,8 @@ uses
   cUtils in 'Utils\cUtils.pas',
   vLogin in 'view\vLogin.pas' {frmLogin},
   mEntidadeUsuario in 'model\Entidades\mEntidadeUsuario.pas',
-  mSistema in 'model\mSistema.pas' {dmSistema: TDataModule};
+  mSistema in 'model\mSistema.pas' {dmSistema: TDataModule},
+  vRedefinirSenha in 'view\vRedefinirSenha.pas' {frmRedefinirSenha};
 
 {$R *.res}
 

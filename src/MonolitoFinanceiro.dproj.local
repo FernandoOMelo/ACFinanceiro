@@ -10,8 +10,8 @@
     <Transaction>2024/06/17 15:52:06.000.965,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
     <Transaction>2024/06/17 15:52:46.000.681,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.dfm=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroTemplate.dfm</Transaction>
     <Transaction>2024/06/17 15:52:46.000.681,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroTemplate.pas</Transaction>
-    <Transaction>2024/06/17 15:53:25.000.890,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroTemplate.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroPadrao.pas</Transaction>
     <Transaction>2024/06/17 15:53:25.000.890,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroTemplate.dfm=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroPadrao.dfm</Transaction>
+    <Transaction>2024/06/17 15:53:25.000.890,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroTemplate.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroPadrao.pas</Transaction>
     <Transaction>2024/06/17 16:38:30.000.191,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
     <Transaction>2024/06/17 16:38:38.000.995,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vSplash.pas</Transaction>
     <Transaction>2024/06/17 16:38:38.000.995,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.dfm=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vSplash.dfm</Transaction>
@@ -22,16 +22,19 @@
     <Transaction>2024/06/17 18:00:27.000.573,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroUsuarios.pas</Transaction>
     <Transaction>2024/06/17 18:00:27.000.573,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.dfm=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vCadastroUsuarios.dfm</Transaction>
     <Transaction>2024/06/17 19:45:30.000.907,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
-    <Transaction>2024/06/17 19:45:45.000.842,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.dfm=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\model\mUsuarios.dfm</Transaction>
     <Transaction>2024/06/17 19:45:45.000.842,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\model\mUsuarios.pas</Transaction>
+    <Transaction>2024/06/17 19:45:45.000.842,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.dfm=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\model\mUsuarios.dfm</Transaction>
     <Transaction>2024/06/17 23:12:50.000.161,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
     <Transaction>2024/06/17 23:13:04.000.450,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Utils\cUtils.pas</Transaction>
-    <Transaction>2024/06/24 17:19:22.361,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
-    <Transaction>2024/06/24 17:19:44.749,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vLogin.pas</Transaction>
-    <Transaction>2024/06/24 17:55:44.363,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
-    <Transaction>2024/06/24 17:56:05.572,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\model\Entidades\mEntidadeUsuario.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
-    <Transaction>2024/06/24 18:18:49.161,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
-    <Transaction>2024/06/24 18:20:27.453,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\model\mSistema.dfm=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.dfm</Transaction>
-    <Transaction>2024/06/24 18:20:27.453,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\model\mSistema.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
+    <Transaction>2024/06/24 17:19:22.000.361,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
+    <Transaction>2024/06/24 17:19:44.000.749,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vLogin.pas</Transaction>
+    <Transaction>2024/06/24 17:55:44.000.363,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
+    <Transaction>2024/06/24 17:56:05.000.572,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\model\Entidades\mEntidadeUsuario.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
+    <Transaction>2024/06/24 18:18:49.000.161,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
+    <Transaction>2024/06/24 18:20:27.000.453,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\model\mSistema.dfm=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.dfm</Transaction>
+    <Transaction>2024/06/24 18:20:27.000.453,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\model\mSistema.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
+    <Transaction>2024/06/28 20:57:10.301,=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
+    <Transaction>2024/06/28 20:57:20.413,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vRedefinirSenha.pas=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.pas</Transaction>
+    <Transaction>2024/06/28 20:57:20.413,C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\view\vRedefinirSenha.dfm=C:\Fontes\Cursos\Delphi\ACFinanceiro\ACFinanceiro\src\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>

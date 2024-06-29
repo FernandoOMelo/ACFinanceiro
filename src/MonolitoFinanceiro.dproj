@@ -59,6 +59,7 @@
         <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
         <SanitizedProjectName>MonolitoFinanceiro</SanitizedProjectName>
+        <DCC_UnitSearchPath>modules\.dcp;..\modules\.dcp;modules\.dcu;..\modules\.dcu;modules;..\modules;modules\bcrypt\src;..\modules\bcrypt\src;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <DCC_UsePackage>DBXSqliteDriver;DBXDb2Driver;vclactnband;vclFireDAC;TecladoVirtualNumerico;tethering;FireDACADSDriver;TecladoAlfa;ACBr_BPe;ACBr_BPeDabpeESCPOS;JvPluginSystem;FireDACMSSQLDriver;vcltouch;ACBr_NFe;JvBands;vcldb;Intraweb;svn;JvJans;ACBr_NFeDanfeESCPOS;ACBr_NFeDanfeFPDF;ACBr_PAFNFCe;ACBr_OFX;JvDotNetCtrls;vclib;FireDACDBXDriver;vclx;ACBr_NFCom;ACBr_SATExtratoRL;ACBr_GTIN;ACBr_Reinf;VCLRESTComponents;vclie;bindengine;ACBr_PAF;FireDACMySQLDriver;JvHMI;ACBr_SATECFVirtual;DataSnapClient;ACBr_OpenDelivery;bindcompdbx;ACBr_CTeDacteRL;ACBr_TCP;DBXSybaseASEDriver;IndyIPServer;ACBr_CTe;IndySystem;ACBr_PagFor;dsnapcon;ACBre_Social;TecladoNumericoGalileo;FireDACMSAccDriver;fmxFireDAC;FireDACInfxDriver;vclimg;ACBr_SPEDImportar;Jcl;ACBr_SPED;ACBr_MDFe;emshosting;ACBr_NFSeXDanfseFPDF;ACBr_BoletoRL;ACBr_LFD;DBXOdbcDriver;FireDACTDataDriver;FMXTee;DbxCommonDriver;ACBr_CIOT;ACBr_NFSeDanfseRL;JvManagedThreads;xmlrtl;DataSnapNativeClient;fmxobj;JvTimeFramework;rtl;DbxClientDriver;DBXSybaseASADriver;JvStdCtrls;Teclado_Alfa_Galileo_Plus;JvSystem;ACBr_Convenio115;appanalytics;ACBr_DebitoAutomatico;IndyIPClient;bindcompvcl;TeeUI;JvDocking;JvPascalInterpreter;VclSmp;FireDACODBCDriver;JclVcl;DataSnapIndy10ServerTransport;ACBr_Boleto;DataSnapProviderClient;ACBr_SEF2;FireDACMongoDBDriver;JvControls;JvPrintPreview;ACBr_NFSe;pkgADRIFood;DataSnapServerMidas;DBXInterBaseDriver;ACBr_NF3e;ACBr_TEFD;ACBr_SATWS;svnui;JvGlobus;DBXMSSQLDriver;JvMM;ACBr_MDFeDamdfeRL;DatasnapConnectorsFreePascal;ACBr_EDI;ACBr_ONE;bindcompfmx;JvNet;DBXOracleDriver;inetdb;JvAppFrm;ACBr_Diversos;FmxTeeUI;emsedge;ACBr_LCDPR;fmx;fmxdae;JvWizards;ACBr_Ponto;dbexpress;IndyCore;JvPageComps;dsnap;DataSnapCommon;JvDB;ACBr_NFSeX;DataSnapConnectors;ACBR_DeSTDA;ACBr_SAT;JclDeveloperTools;FireDACOracleDriver;DBXMySQLDriver;JvCmp;DBXFirebirdDriver;ACBr_Sintegra;FireDACCommonODBC;ACBr_ADRCST;ACBr_GNRE;IndyIPCommon;JvCustom;vcl;ACBr_NFeDanfeRL;ACBr_SATExtratoESCPOS;JvXPCtrls;FireDACDb2Driver;ACBr_Integrador;TeeDB;JvCore;ACBr_Comum;JvCrypt;FireDACPgDriver;ibmonitor;FireDACASADriver;ACBr_GNREGuiaRL;JvDlgs;JvRuntimeDesign;ibxpress;Tee;DataSnapServer;ibxbindings;vclwinx;FireDACDSDriver;ACBr_OpenSSL;CustomIPTransport;vcldsnap;ACBr_PIXCD;bindcomp;ACBr_Serial;DBXInformixDriver;frce;ACBr_NFSeXDanfseRL;ACBr_BlocoX;dbxcds;ACBr_NFCeECFVirtual;adortl;ACBr_ANe;dsnapxml;dbrtl;inetdbxpress;IndyProtocols;JclContainers;ACBr_NF3eDANF3eESCPOS;ACBr_MTER;fmxase;$(DCC_UsePackage)</DCC_UsePackage>
@@ -139,6 +140,10 @@
             <Form>dmSistema</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="view\vRedefinirSenha.pas">
+            <Form>frmRedefinirSenha</Form>
+            <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
