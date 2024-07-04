@@ -1,0 +1,15 @@
+on: push
+name: Deploy EXE on Push
+jobs:
+  web-deploy:
+    name: Deploy
+    steps:
+      - name: Get latest EXE
+        uses: actions/checkout@v2
+
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: api.sistemagalileo.com.br
+          username: root
+          password: ${{ secrets.ftp_password}}
