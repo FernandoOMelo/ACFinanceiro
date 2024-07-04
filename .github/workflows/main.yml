@@ -1,0 +1,20 @@
+on: 
+  push:
+    branches:
+      - main
+name: Deploy EXE on Push
+jobs:
+  web-deploy:
+    runs-on: CentOS-7
+    name: Deploy
+    steps:
+      - name: Get latest EXE
+        uses: actions/checkout@v2
+
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.ftp_host}}
+          username: ${{ secrets.ftp_username}}
+          password: ${{ secrets.ftp_password}}
+          server-dir: /galileo/plus/downloads/TesteFernando
